@@ -5,11 +5,11 @@ TransferWise can be used in SEPA trades as well, where one peer uses SEPA and an
 
 TransferWise is a web- and app-based money transfer service that supports multiple currencies. TransferWise to TransferWise payments allow users to send payment from any supported currency to any other supported currency. Payments utilize the TransferWise multi-currency account. This is available for users in most countries.
 
-Contents:
-    1 Setting up a TransferWise Account
-    2 Setting up a TransferWise Account in Haveno-reto
-    3 Getting your TransferWise account ready for trading
-    4 Making payments with TransferWise
+**Contents:**:
+- 1 Setting up a TransferWise Account
+- 2 Setting up a TransferWise Account in Haveno-reto
+- 3 Getting your TransferWise account ready for trading
+- 4 Making payments with TransferWise
 
 #### 1. Setting up a TransferWise Account
 

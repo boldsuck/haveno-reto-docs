@@ -3,21 +3,20 @@
 - SEPA is a payment method added used in Haveno-reto for buying and selling XMR for Euros (EUR).
 SEPA is the most common way people in the EU send and receive payment to each other via their banks. Those payments usually take a couple of working days to complete, but can take up to 6 days depending on weekends / public holidays.
 
-- Contents:
-
-    1 Where can I find out more about SEPA?
-    2 What countries are available for SEPA?
-    3 What currencies are available for SEPA?
-    4 What is the maximum trading duration for SEPA?
-    5 What is the maximum XMR limit for a SEPA trade?
-    6 Is SEPA a payment method that can be signed?
-    7 How do I set up a SEPA account?
-    8 How do I add a SEPA account as a payment method in SEPA?
-    9 How do I buy XMR with my SEPA account?
-    10 How do I sell XMR with my SEPA account?
-    11 Are there any limits for me to be aware of when using my SEPA account?
-    12 Are there any fees for me to be aware of when using my SEPA account?
-    13 How does dispute resolution when trading with SEPA?
+****Contents:**:**
+- 1 Where can I find out more about SEPA?
+- 2 What countries are available for SEPA?
+- 3 What currencies are available for SEPA?
+- 4 What is the maximum trading duration for SEPA?
+- 5 What is the maximum XMR limit for a SEPA trade?
+- 6 Is SEPA a payment method that can be signed?
+- 7 How do I set up a SEPA account?
+- 8 How do I add a SEPA account as a payment method in SEPA?
+- 9 How do I buy XMR with my SEPA account?
+- 10 How do I sell XMR with my SEPA account?
+- 11 Are there any limits for me to be aware of when using my SEPA account?
+- 12 Are there any fees for me to be aware of when using my SEPA account?
+- 13 How does dispute resolution when trading with SEPA?
 
 #### 1. Where can I find out more about SEPA?
 Here is a list of SEPA resources:
@@ -54,7 +53,7 @@ It is easy to add your SEPA account to Haveno-reto.
 - Click save new account
 
 Make sure all the details are correct when you add. Make sure to include both your Name as shown by the bank when you send payment (eg Jan Franco, or Franco. Jan), your IBAN and BIC number.
-**! Warning ! Revolut SEPA accounts are not allowed on Haveno-reto due to poor acceptance by other banks**
+**Warning** Revolut SEPA accounts are not allowed on Haveno-reto due to poor acceptance by other banks
 
 #### 9. How do I buy XMR with my SEPA account?
 You can buy XMR with SEPA on Haveno-reto in 2 waysː
@@ -67,7 +66,7 @@ When the offer is confirmed Haveno-reto will provide you with the XMR Sellers SE
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
 Once the XMR Seller receives your payment they will confirm in Haveno-reto and your security deposit and your purchased trade amount will be available in your wallet.
-**! Warning ! Please send payment only to the details provided by the XMR Seller in their Haveno-reto account, and the payment description blank.**
+**Warning** Please send payment only to the details provided by the XMR Seller in their Haveno-reto account, and the payment description blank.
 
 #### 10. How do I sell XMR with my SEPA account?
 You can sell XMR with SEPA on Haveno-reto in 2 waysː
@@ -77,7 +76,7 @@ You can sell XMR with SEPA on Haveno-reto in 2 waysː
 When the offer is confirmed Haveno-reto will provide with the XMR Buyer with your SEPA details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno-reto by clicking 'payment started'.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno-reto. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
-**Warning XMR Sellers should expect to receive payment from the name shown in the XMR Buyer's Haveno-reto account. Not all banks will show the IBAN and XMR number the payment came from but the name must match.**
+**Warning**, XMR Sellers should expect to receive payment from the name shown in the XMR Buyer's Haveno-reto account. Not all banks will show the IBAN and XMR number the payment came from but the name must match.**
 
 #### 11. Are there any limits for me to be aware of when using my SEPA account?
 Limits are set by your bank. Check with your bank what the limits allowed are. Most limits are about €50,000 per day. There is no minimum limit.

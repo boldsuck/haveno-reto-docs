@@ -16,7 +16,7 @@ When setting up a F2F payment account in Haveno-reto, you will be asked to enter
 - Additional information (for example where you would like to complete the trade, do NOT place direct contact information here!)
 
 You can only select one currency for a single F2F account. If you would like to trade with more than one currency, please create separate accounts for each currency. Define any special terms, conditions, or details you would like to be displayed with your offers in the 'Additional Information' field. Users can see this field before taking the offer by clicking the info icon of the offer.
-*Note: Consider setting up separate F2F accounts for buying and selling so you can specify special instructions for each.*
+***Note:** Consider setting up separate F2F accounts for buying and selling so you can specify special instructions for each.*
  
 ### Making a F2F offer
 
