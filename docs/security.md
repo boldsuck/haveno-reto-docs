@@ -3,7 +3,7 @@
 - Syncing your monero wallet is using clearnet by default (transactions are broadcasted over Tor). If you want to do it over Tor to keep your complete haveno/monero traffic private:
 Edit your *haveno.properties* file located at *{haveno-reto-path}/haveno.properties* and add **--useTorForXmr=ON** in a new line (**--useTorForXmr=AFTER_SYNC** is the default arg)
 
-- To use Haveno-reto on TailsOS, an installation script [is available here]()
+- To use Haveno-reto on TailsOS, an installation script [is available here](/scripts/haveno-tor-unwrapped.sh)
 - To use Haveno-reto with an existing Tor connection, be sure to use in your tor configuration file:
 ```
 PidFile {Haveno-reto-path}/xmr_mainnet/tor/pid # Only on Linux

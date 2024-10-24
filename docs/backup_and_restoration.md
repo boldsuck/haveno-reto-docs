@@ -23,6 +23,8 @@ Go to **Account -> Backup** and put in a location for your backup to be exported
 #### 1.2 While Haveno-reto is closed
 When Haveno-reto is closed, you can simply copy the entire data directory and paste it somewhere safe. Find the location of your data directory by clicking on the Open Directory button (see screenshot above) or see data directory locations here.
 
+- A script to make an encrypted backup [is available here](/scripts/haveno-backup-restore.sh)
+
 #### 1.3 Encrypt your backup
 Backup files are not encrypted. If you’ve set a wallet password, your wallet files will be encrypted, but all your other data will not be encrypted.
 We recommend encrypting the whole backup folder with something like gpg, 7-Zip, Cryptomator, etc.

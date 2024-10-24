@@ -9,7 +9,7 @@ Unlike cryptocurrency transfers, many fiat payment transfers are riddled with fl
 **Contents:**:
 - 1 Fiat payment methods
 - 1.1 Payment method guides
-- 2 Altcoin payment methods	
+- 2 Altcoin payment methods
 
 #### 1. Fiat payment methods
 
@@ -133,7 +133,7 @@ Below is a list of fiat payment methods Haveno-reto currently supports.
 
 #### 2. Altcoin payment methods
 
-Haveno-reto also supports a variety of cryptocurrencies for buying and selling Monero, like BTC, ETH, LTC, BCH. Because altcoin transfers are irreversible and relatively quick, altcoin trades can be up to 96 XMR in size right away (no need to wait for account aging or account signing). 
+Haveno-reto also supports a variety of cryptocurrencies for buying and selling Monero, like BTC, ETH, LTC, BCH. Because altcoin transfers are irreversible and relatively quick, altcoin trades can be up to 96 XMR in size right away (no need to wait for account aging or account signing).
 |-------------------------------|----------------------------------|----------------------------------|
 |   Payment Method              |            Trading Period	       |             Trade limit          |
 |-------------------------------|----------------------------------|----------------------------------|
@@ -141,4 +141,4 @@ Haveno-reto also supports a variety of cryptocurrencies for buying and selling M
 |-------------------------------|----------------------------------|----------------------------------|
 |   Altcoins Instant            |                1 Hour            |             96.00 XMR            |
 |-------------------------------|----------------------------------|----------------------------------|
-- Altcoins Instant trades go by fast! Please remember to disable Instant offers in **Portfolio > My Open Offers** if you might not be around to settle an Instant trade. 
+- Altcoins Instant trades go by fast! Please remember to disable Instant offers in **Portfolio > My Open Offers** if you might not be around to settle an Instant trade.
