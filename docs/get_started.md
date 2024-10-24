@@ -14,7 +14,7 @@ If you'd like to build Haveno-reto from source, [here are directions](/docs/inst
 
 - With Haveno-reto, you're in total control of your funds and your data. This means you retain unparalleled sovereignty, but it also means no one can help you if you lose something important—so it's critical that you do proper backups before using Haveno-reto to trade.
 
-More details at: [data backup and restoration](/docs/backup_restoration.md).
+More details at: [data backup and restoration](/docs/backup_and_restoration.md).
 
 ### 3. Create a Payment Account
 

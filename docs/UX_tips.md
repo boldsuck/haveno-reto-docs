@@ -7,5 +7,3 @@
 - Use your own node if possible for faster wallet syncing & a better privacy.
 - Externally fund your offer to match precise deposit amounts, you can click on the monero URL or scanning the QRCode with a wallet to get transaction descriptions.
 - Make multiple payment accounts to have all methods you need to trade and switch on **offers matching my accounts** in **buy/sell**
-
-
