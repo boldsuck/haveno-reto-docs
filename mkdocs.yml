@@ -1,0 +1,123 @@
+site_name: Haveno Documentation
+site_url: https://docs.haveno.exchange
+copyright: Copyright &copy; 2024 Haveno
+
+theme:
+  name: material
+  #custom_dir: overrides
+  logo: 'resources/img/haveno.svg'
+  favicon: 'resources/img/favicon.ico'
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    # Palette toggle for light mode
+    - scheme: youtube
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+    - macros
+    - search
+
+markdown_extensions:
+  - admonition  # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight: # Code blocks
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  version:
+    haveno: 1.0.12
+  social:
+    - icon: material/web
+      link: https://haveno.exchange
+    - icon: fontawesome/brands/github
+      link: https://github.com/haveno-dex
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/HavenoDEX
+    - icon: simple/matrix
+      link: https://matrix.to/#/#haveno:haveno.network
+    - icon: material/chat
+      link: irc://irc.libera.chat/#haveno
+
+nav:
+  - Home: 'index.md'
+  - The Project:
+    - Overview of Haveno: 'the-project/overview.md'
+    - Trade Protocol: 'the-project/trade-protocol.md'
+    - Conflict Resolution: 'the-project/conflict-resolution.md'
+    - Roles:
+      - Core Team: 'the-project/roles/core-team.md'
+      - Arbitrators: 'the-project/roles/arbitrators.md'
+      - Publishers: 'the-project/roles/publishers.md'
+    - Assets and Payment Methods: 'the-project/assets.md'
+    - Payment Methods:
+      - Overview - Currently supported: 'the-project/payment_methods/0-all-methods.md'
+      - ACH: 'the-project/payment_methods/ACH.md'
+      - Amazon eGift card: 'the-project/payment_methods/Amazon_eGift_card.md'
+      - Bizum: 'the-project/payment_methods/Bizum.md'
+      - Capitual: 'the-project/payment_methods/Capitual.md'
+      - Domestic Wire Transfer: 'the-project/payment_methods/Domestic_Wire_Transfer.md'
+      - F2F: 'the-project/payment_methods/F2F.md'
+      - Faster Payments: 'the-project/payment_methods/Faster_Payments.md'
+      - IMPS: 'the-project/payment_methods/IMPS.md'
+      - Interac e-transfer: 'the-project/payment_methods/interac_e-transfer.md'
+      - Monese: 'the-project/payment_methods/Monese.md'
+      - NEFT: 'the-project/payment_methods/NEFT.md'
+      - Nequi: 'the-project/payment_methods/Nequi.md'
+      - Paxum: 'the-project/payment_methods/Paxum.md'
+      - Pay By Mail: 'the-project/payment_methods/Pay_By_Mail.md'
+      - Paysera: 'the-project/payment_methods/Paysera.md'
+      - PayTM: 'the-project/payment_methods/PayTM.md'
+      - Pix: 'the-project/payment_methods/Pix.md'
+      - Revolut: 'the-project/payment_methods/Revolut.md'
+      - RTGS: 'the-project/payment_methods/RTGS.md'
+      - Satispay: 'the-project/payment_methods/Satispay.md'
+      - SEPA: 'the-project/payment_methods/SEPA.md'
+      - SEPA Instant: 'the-project/payment_methods/SEPA_Instant.md'
+      - Strike: 'the-project/payment_methods/Strike.md'
+      - SWIFT: 'the-project/payment_methods/SWIFT.md'
+      - TransferWise: 'the-project/payment_methods/TransferWise.md'
+      - TransferWise USD: 'the-project/payment_methods/TransferWise-USD.md'
+      - UPI: 'the-project/payment_methods/UPI.md'
+      - US Postal Money Order: 'the-project/payment_methods/US_Postal_Money_Order.md'
+      - Verse: 'the-project/payment_methods/Verse.md'
+    - Account limits: 'the-project/account_limits.md'
+  - Development:
+    - Install and Run Haveno: 'development/installing.md'
+    - User Interface: 'development/haveno-ui.md'
+    - API: 'development/api.md'
+    - Bounties: 'development/bounties.md'
+    - Import Development Environment: 'development/importing.md'
+    - Contributor Guidelines: 'development/contributor-guidelines.md'
+  - Trade recommentions:
+    - Getting Started: 'trade-recommendations/get_started.md'
+    - Best ways: 'trade-recommendations/README.md'
+    - Security tips: 'trade-recommendations/security.md'
+    - Troubleshooting: 'trade-recommendations/troubleshooting.md'
