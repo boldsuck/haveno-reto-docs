@@ -10,5 +10,5 @@ If you want to fasten large gaps of wallet syncing or correcting your wallet bal
 ### "I can't access to Tor" "Tor isn't launching"
 
 - If Tor started but you can't connect to the network, you might need a bridge to connect to the network.
-- Tor is slow to start so you might wait some time before haveno launches.
+- Tor is slow to start so you might wait some time before Haveno launches.
 - If you use TailsOS or an existing/external Tor process, follow security.md

@@ -28,17 +28,17 @@ Trading needs an account for the payment method and currency used to take and pu
 
 ### 3.1 Create, fund and publish your offer (maker)
 
-Go in the market you want to trade (in our example selling Monero for Bitcoin) and click on `create offer to sell XMR`
+Go in the market you want to trade (in our example selling Monero for Bitcoin) and click on `CREATE OFFER TO SELL XMR`
 ![Image](../resources/img/haveno-ui/create_offer.png)
 
-You can set an optional minimum of XMR to buy, if you want flexible sizes to be accessible and setting a fixed price or a % derivation (below or above the market price) before clicking on "next step".
+You can set an optional minimum of XMR to buy, if you want flexible sizes to be accessible and setting a fixed price or a % derivation (below or above the market price) before clicking on `NEXT STEP`.
 ![Image](../resources/img/haveno-ui/price_fluctuation_or_fixed_price.png)
 
 After the offer is set, you need to fund your trade offer with a security deposit worth 15% of the trade (as shown earlier) before placing your offer.
 In our case since we sell we technically need 115% of the trade.
 ![Image](../resources/img/haveno-ui/place_offer.png)
 
-It is generally advised to externally fund your trade so you'll need to wait for block confirmations, balance is shown as **pending** until the external deposit reached 10 block confirmations and you will have the possibility to click on `Place offer to buy BTC` when funds will be shown in **available balance**.
+It is generally advised to externally fund your trade so you'll need to wait for block confirmations, balance is shown as **pending** until the external deposit reached 10 block confirmations and you will have the possibility to click on `REVIEW: PLACE OFFER TO BUY BTC` when funds will be shown in **available balance**.
 ![Image](../resources/img/haveno-ui/wait_for_confirm_funding.png)
 
 Confirm placing your offer, you can take your TradeID to share it privately to someone or reviewing the summary before confirming.
@@ -66,13 +66,13 @@ Confirm taking the offer and it will initiate the trade.
 
 ### 3.3 Trading steps
 
-Once the trade is setup, go in open offers and click on your trade. To get the trading chat for contacting your peer, click on the chat icon.
+Once the trade is setup, go in `MY OPEN OFFERS` and click on your trade. To get the trading chat for contacting your peer, click on the chat icon.
 ![Image](../resources/img/haveno-ui/opened_trade.png)
 /// caption
 Peers need to wait 10 confirmations before trading (chain re-org protection)
 ///
 
-In our example the taker buy XMR so marking payment sent once BTC funds are sent to the maker.
+In our example the taker buy XMR so marking `PAYMENT SENT` once BTC funds are sent to the maker.
 ![Image](../resources/img/haveno-ui/tradetakermarkpaymentsent.png)
 
 The seller (maker in our case) receive the payment notification.

@@ -22,7 +22,8 @@ A practical example of a conflict resolved by an arbitrator on Haveno:
 !!! note
     The deposit is taken away as punishment only in the case of a malicious trader. Technical or other problems will be simply resolved by sending each trader's deposit (minus the platform fee) back to them.
 
-# Arbitration & Disputes on Haveno-reto
+
+## Arbitration & Disputes on Haveno-reto
 
 Haveno-reto is guarded by two arbitrators who can take decisions during a trade-dispute. Their role is to decide who's at fault, from information given by peers in the dispute chat.
 Trades are secured by a 2/3 multisig, so an arbitrator can't publish a payout if it wasn't signed by the taker or the maker.

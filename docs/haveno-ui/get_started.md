@@ -14,7 +14,7 @@ If you'd like to build Haveno-reto from source, [here are directions](https://gi
 
 - With Haveno-reto, you're in total control of your funds and your data. This means you retain unparalleled sovereignty, but it also means no one can help you if you lose something important—so it's critical that you do proper backups before using Haveno-reto to trade.
 
-More details at: [data backup and restoration](../the-project/backing_up_application_data.md).
+More details at: [data backup and restoration](backing_up_application_data.md).
 
 ### 3. Create a Payment Account
 
@@ -25,4 +25,4 @@ Not sure which kind of payment account to set up? There's a full list of [paymen
 ### 4. Do a Trade
 
 Making an offer will usually get you a better price and more control (e.g.: setting payment method and deposit percentage), but taking an offer can be more convenient.
-To see both sides of a Haveno-reto trade at the same time, side-by-side: be sure to check out our [trading recommendations](README.md) and [linked tutorials made by the community](https://haveno-reto.com/#posts).
+To see both sides of a Haveno-reto trade at the same time, side-by-side: be sure to check out our [trading recommendations](trading-recommendations.md) and [linked tutorials made by the community](https://haveno-reto.com/#posts).
