@@ -1,6 +1,6 @@
 site_name: Haveno Documentation
-site_url: https://docs.haveno.exchange
-copyright: Copyright &copy; 2024 Haveno
+site_url: https://docs.haveno-reto.com
+copyright: Copyright &copy; 2024 Haveno & retoaccess1
 
 theme:
   name: material
@@ -41,8 +41,8 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - tables
   - attr_list
   - md_in_html
