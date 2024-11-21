@@ -11,9 +11,21 @@ The safest, quickest, easiest, and most comprehensive thing you can do to safegu
 
 Go to `Account` -> `Backup` and put in a location for your backup to be exported to (note that this section is titled "Backup wallet" in the software but it actually exports the entire data directory).
 
+<!---
+![Export backup](../resources/img/haveno-ui/backup.png)
+/// caption
+Data directory backup screen.
+///
+-->
+
 #### 1.2 While Haveno-reto is closed
 
-When Haveno-reto is closed, you can simply copy the entire data directory and paste it somewhere safe. Find the location of your data directory by clicking on the Open Directory button (see screenshot above) or see data directory locations here.
+When Haveno-reto is closed, you can simply copy the entire data directory and paste it somewhere safe. Find the location of your data directory by clicking on the `Open Directory` button (see screenshot above) or see data directory locations here:
+
+    Linux: ~/.local/share/Haveno-reto/
+    macOS: ~/Library/Application Support/Haveno-reto/
+    Windows: ~\AppData\Roaming\Haveno-reto\
+
 
 #### 1.3 Encrypt your backup
 
@@ -23,7 +35,7 @@ We recommend encrypting the whole backup folder with something like gpg, 7-Zip, 
 ### 2. Back up payment accounts
 
 If you just want to back up your payment accounts, export them from `Account` -> `Traditional Currency Accounts`.
-Be advised: exporting your accounts this way only exports metadata. Aging and signing status are not included. To include account aging and signing status, you also need to save the xmr_mainnet/keys/sig.key file from your data directory.
+Be advised: exporting your accounts this way only exports metadata. **Aging and signing status are not included.** To include account aging and signing status, you also need to save the `xmr_mainnet/keys/sig.key` file from your data directory.
 Because of the way restoring payment accounts works, it's best for most users to back up the whole data directory and back up a payment account export.
 Export fiat payment accounts here. You can export cryptocurrency accounts from the Cryptocurrency Accounts tab.
 
@@ -33,18 +45,19 @@ Please be sure to properly back up your wallet seed.
 
 ### 4. Export Tor state
 
-If you want to carry over a particular onion address (and keep your local reputation), you can replace the xmr_mainnet/tor/hiddenservice folder in your data directory with the one from your backup.
+If you want to carry over a particular onion address (and keep your local reputation), you can replace the `xmr_mainnet/tor/hiddenservice` folder in your data directory with the one from your backup.
 
 ### 5. Export trade history
 
-In `Portfolio` -> `History` you'll find an Export to CSV button to export your trade history.
+In `Portfolio` -> `History` you'll find an `Export to CSV` button to export your trade history.
 There's no way to import this data back into Haveno-reto, but it can be useful to have a copy of this data for yourself for record-keeping, analysis, etc.
 
 ### 6. Export transaction history
-In ''Funds' -> `Transactions` you'll find an Export to CSV button to export your trade history.
+
+In `Funds` -> `Transactions` you'll find an `Export to CSV` button to export your trade history.
 There's no way to import this data back into Haveno-reto, but it can be useful to have a copy of this data for yourself for record-keeping, analysis, etc.
 
-# Restore Haveno data
+## Restore Haveno data
 
 Restoring application data can be useful to bring back payment accounts, onion addresses, and other items from a backup—or to move your Haveno-reto instance to an entirely new machine.
 You can restore an entire data directory at once, or just the parts you want.
@@ -63,11 +76,11 @@ A payment account export only contains metadata (name, bank information, etc). F
 
 If you have a payment accounts export file, import it in `Account` -> `Traditional Currency Accounts`
 
-If you don't have an export file, but you do have a full backup, you can salvage your payment account metadata from xmr_mainnet/db/UserPayload by running the strings utility on the UserPayload file (e.g., run strings /path/to/backup/xmr_mainnet/db/UserPayload in a terminal window). The command will output a simplified version of the UserPayload file to your terminal. Scroll up a bit and you should see your payment account information.
+If you don't have an export file, but you do have a full backup, you can salvage your payment account metadata from `xmr_mainnet/db/UserPayload` by running the *strings* utility on the UserPayload file (e.g.: run `strings /path/to/backup/xmr_mainnet/db/UserPayload` in a terminal window). The command will output a simplified version of the UserPayload file to your terminal. Scroll up a bit and you should see your payment account information.
 
 Use the output to copy and paste the details into new payment accounts in Haveno-reto, paying special attention to make sure each field is copied over with 100% accuracy (including the salt): even a 1 character difference in any field will cause the hash of the payment account to be different, which means aging and signing status will not be restored in the following step.
 
-There are quirks. Here's an example of output from a strings command:
+There are quirks. Here's an example of output from a *strings* command:
 
 ```
 SEPA
@@ -80,12 +93,13 @@ salt
 ```
 
 From the output above:
-Be wary of extra characters at the beginning or end of a line. In the example above, the * character is not part of the BIC "DEUTDE5X".
-Salts are alphanumeric, so the @ is not part of the salt "56655c3738ea9dea3b20f482fff048985a2757e57dff206fbd9e8c4f267f7781".
 
-If you're on Windows, or cannot use the strings utility for some other reason, you can just open UserPayload directly in a text editor, but there will be more cruft to sift through since the file isn't meant to be human-readable.
+- Be wary of extra characters at the beginning or end of a line. In the example above, the * character is not part of the BIC "DEUTDE5X".
+- Salts are alphanumeric, so the @ is not part of the salt "56655c3738ea9dea3b20f482fff048985a2757e57dff206fbd9e8c4f267f7781".
 
-It may be tempting to just replace the entire UserPayload file from a backup, but this is not recommended, as it may contain other data that could result in data corruption in your new instance.
+If you're on Windows, or cannot use the *strings* utility for some other reason, you can just open UserPayload directly in a text editor, but there will be more cruft to sift through since the file isn't meant to be human-readable.
+
+It may be tempting to just replace the entire UserPayload file from a backup, but this is **not recommended**, as it may contain other data that could result in data corruption in your new instance.
 Restore payment account aging and signing status
 
 Once you've restored your payment account metadata, you'll see the accounts in Haveno-reto, but they'll have no aging or signing status. You can get aging and signing status back by replacing `xmr_mainnet/keys/sig.key` from your backup.
@@ -102,6 +116,7 @@ Upon opening Haveno-reto, you should see account aging and signing status restor
 ### 4. Restore onion address
 
 Your onion address determines your local reputation, so depending on your preferences, you may want to reset it or restore it over time.
+
 If you want to restore it:
 
 - Close Haveno-reto. Also make sure you've made a backup of your data directory (just in case).
@@ -119,4 +134,5 @@ You may want to keep your trade history despite changing wallets. You can do so 
 You will see bubbles with trade counts in the offer books for any any peers you traded with.
 
 ### 6. Restore wallet
+
 If starting a new data directory, it's generally best to just send funds from one Haveno-reto instance to another with an on-chain transaction.
