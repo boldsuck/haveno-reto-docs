@@ -10,12 +10,13 @@ Unlike cryptocurrency transfers, many fiat payment transfers are riddled with fl
 
 The payment methods vary in chargeback risk, regional availability, transaction size, fees, privacy, verifiability, and other characteristics. The top consideration for maintaining payment methods is chargeback risk.
 
-We welcome suggestions for new payment methods on Haveno, especially for those that enable new markets. Documentation on the criteria and process for adding new payment methods is found [here](https://github.com/haveno-dex/listing). Please also feel free to make suggestions by reaching out on Matrix room **Haveno Development** [#haveno-dev:monero.social](https://matrix.to/#/#haveno-dev:monero.social) relayed on IRC/Libera (`#haveno-dev`)
+We welcome suggestions for new payment methods on Haveno, especially for those that enable new markets. Documentation on the criteria and process for adding new payment methods is found [here](https://github.com/haveno-dex/listing). Please also feel free to make suggestions by reaching out on Matrix room **Haveno Development** [#haveno-development:monero.social](https://matrix.to/#/#haveno-development:monero.social) relayed on IRC/Libera (`#haveno-development`)
 
 Below is a list of fiat payment methods Haveno currently supports.
 
 !!! note
     The maximum trade sizes listed below are not available for most newly-created payment accounts. Please refer to Account signing for details on how to enable larger trade sizes for your payment accounts.
+    **Haveno v1.0.15 will increase some limits: Pay by Mail to 25 XMR and all Altcoin to 500 XMR**
 
 #### 1.1 Fiat payment methods
 
