@@ -1,4 +1,4 @@
-## Get started on Haveno-reto
+# Get started on Haveno-reto
 
 ### 1. Launching Haveno
 

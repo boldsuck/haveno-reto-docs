@@ -1,7 +1,6 @@
 # Backing up application data
 
-Backing up your Haveno-reto data is crucial to ensure you can retain control over trades, disputes, payment accounts, and funds in case of issues with your machine (e.g., drive failure) or Haveno-reto itself (e.g., critical bugs).
-All Haveno-reto data is stored right on your computer—it's never stored (or even sent) to a central server, so backing it up is your job. We will see data restoration after the backup.
+Backing up your Haveno-reto data is crucial to ensure you can retain control over trades, disputes, payment accounts, and funds in case of issues with your machine (e.g.: drive failure) or Haveno-reto itself (e.g.: critical bugs). All Haveno-reto data is stored right on your computer—it's never stored (or even sent) to a central server, so backing it up is your job. We will see data restoration after the backup.
 
 ### 1. Back up the entire Haveno-reto data directory
 

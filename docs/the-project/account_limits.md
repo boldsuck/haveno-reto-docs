@@ -21,12 +21,10 @@ This means that all payment accounts that deal in currencies not listed above do
 
 ## Account aging
 
-<!---
-![Account age in Offer book](../resources/img/haveno-ui/See-account-age.png){ width="400" }{ align=right }
+![Account age in Offer book](../resources/img/haveno-ui/account-age_light.png){ align=right }
 /// caption
 See account age in the offer book.
 ///
--->
 
 Account age is no longer used to determine trade size limits for most payment methods. It is still measured, however, and you can see a payment account's age in the offer book before taking an offer, but we caution against using it as a measure of integrity. Older accounts are not **necessarily** safer.
 
@@ -92,7 +90,7 @@ Through taking an offer you can make sure that the offer fulfils the requirement
 
 The Haveno interface makes it easy to determine if an offer can help you get signed: simply **look for buy offers with a check mark badge**:
 
-![Signed Accounts in Offers](../resources/img/haveno-ui/Good-bad-signing-asks_dark.png)
+![Signed Accounts in Offers](../resources/img/haveno-ui/good-bad-signing-asks_dark.png)
 /// caption
 Top offers won't get you signed. Bottom offers will get you signed.
 ///
@@ -115,4 +113,4 @@ Self-signed accounts are immediately signed, but limits are not immediately lift
 
 ## Backing up and restoring payment accounts
 
-Once your payment accounts have accrued age and been signed, you won't want to give them up. With [proper backups](../haveno-ui/backing_up_application_data.md), you won't have to—payment accounts can be restored if you ever have to remove/reinstall Haveno, move to another machine, etc.
+Once your payment accounts have accrued age and been signed, you won't want to give them up. With [proper backups](../haveno-ui/backup_and_restore.md), you won't have to—payment accounts can be restored if you ever have to remove/reinstall Haveno, move to another machine, etc.
