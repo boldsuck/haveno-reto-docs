@@ -21,12 +21,12 @@ This means that all payment accounts that deal in currencies not listed above do
 
 ## Account aging
 
-![Account age in Offer book](../resources/img/haveno-ui/account-age_light.png){ align=right }
+Account age is no longer used to determine trade size limits for most payment methods. It is still measured, however, and you can see a payment account's age in the offer book before taking an offer, but we caution against using it as a measure of integrity. Older accounts are not **necessarily** safer.
+
+![Account age in Offer book](../resources/img/haveno-ui/account-age_light.png)
 /// caption
 See account age in the offer book.
 ///
-
-Account age is no longer used to determine trade size limits for most payment methods. It is still measured, however, and you can see a payment account's age in the offer book before taking an offer, but we caution against using it as a measure of integrity. Older accounts are not **necessarily** safer.
 
 **Practically, this means that all payment methods on Haveno have full selling capability from the moment they are created.** Selling limits no longer phase in over time.
 
