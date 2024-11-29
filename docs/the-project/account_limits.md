@@ -2,7 +2,7 @@
 
 Elevated account limits apply to fiat payment accounts in order to limit damage a malicious user can do while allowing honest users to start trading immediately with no KYC and utmost privacy.
 
-Altcoin accounts can trade 96 XMR right away, but all fiat payment account types have limits lower than 96 XMR to match their particular risk profiles (see [this table](payment_methods/0-all-methods.md/#1-fiat-payment-methods) for details). Some payment methods with chargeback risk implement a mechanism called **account signing** that restricts trading activity until a trader proves their integrity to further secure against foul play.
+Cryptocurrency accounts can trade 96 XMR right away (528 XMR since Haveno v1.0.15), but all fiat payment account types have limits lower than 96 XMR to match their particular risk profiles (see [this table](payment_methods/0-all-methods.md/#1-fiat-payment-methods) for details). Some payment methods with chargeback risk implement a mechanism called **account signing** that restricts trading activity until a trader proves their integrity to further secure against foul play.
 
 ## Which payment accounts are affected
 
@@ -12,23 +12,19 @@ All fiat payment methods in all markets limit total trade size depending on the 
 
 Despite these limitations, chargebacks can still be possible for certain payment methods. Haveno reduces this risk with a mechanism called **account signing**.
 
-Account signing only applies to payment accounts that meet **both** of the following conditions:
+Account signing only applies to payment accounts that are subject to chargeback risk: SEPA, SEPA Instant, Interac e-Transfer, Zelle, Revolut, Chase QuickPay, Popmoney, MoneyBeam, Uphold, and any kind of bank transfer.
 
-- used in the following markets: USD, EUR, CAD, GBP, AUD, or BRL
-- is subject to chargeback risk: SEPA, SEPA Instant, Interac e-Transfer, Zelle, Revolut, Chase QuickPay, Popmoney, MoneyBeam, Uphold, and any kind of bank transfer.
-
-This means that all payment accounts that deal in currencies not listed above do **not** require account signing, even if they are subject to chargeback risk.
 
 ## Account aging
 
-Account age is no longer used to determine trade size limits for most payment methods. It is still measured, however, and you can see a payment account's age in the offer book before taking an offer, but we caution against using it as a measure of integrity. Older accounts are not **necessarily** safer.
+Account age is not used to determine trade size limits for payment methods. However, it is measured, and you can see a payment account's age in the offer book before taking an offer, but we caution against using it as a measure of integrity. Older accounts are not **necessarily** safer.
 
 ![Account age in Offer book](../resources/img/haveno-ui/account-age_light.png)
 /// caption
 See account age in the offer book.
 ///
 
-**Practically, this means that all payment methods on Haveno have full selling capability from the moment they are created.** Selling limits no longer phase in over time.
+**All payment methods on Haveno have full selling capability from the moment they are created.**
 
 Some payment methods implement a variation of account aging called account signing whereby limits are increased in stages over a period of 60 days after signing. More about this below.
 
@@ -54,7 +50,7 @@ First let's observe what happens if a new SEPA account is never signed. Notice h
 | Day 0 | 3 XMR | 12 XMR |
 | Day 30 | 3 XMR | 12 XMR |
 | Day 60 | 3 XMR | 12 XMR |
-| Day 90 | 3 XMR | 12 XMR |
+| > 60 | 3 XMR | 12 XMR |
 
 If that SEPA account manages to get signed on the same day it's created, it will see its 3 XMR limit increased on Day 30. Selling limits are unaffected.
 
@@ -63,7 +59,7 @@ If that SEPA account manages to get signed on the same day it's created, it will
 | Day 0 - Account Signed | 3 XMR | 12 XMR |
 | Day 30 | 6 XMR | 12 XMR |
 | Day 60 | 12 XMR | 12 XMR |
-| Day 90 | 12 XMR | 12 XMR |
+| > 60 | 12 XMR | 12 XMR |
 
 But if that SEPA account isn't signed until Day 30, it won't see its limits lifted until Day 60. Again, selling limits are unaffected.
 
@@ -71,8 +67,8 @@ But if that SEPA account isn't signed until Day 30, it won't see its limits lift
 | ---------------------------------------- | ------------------------ | ------------------------- |
 | Day 0 | 3 XMR | 12 XMR |
 | Day 30 - Account Signed | 3 XMR | 12 XMR |
-| Day 60 | 6 XMR | 12 XMR |
-| Day 90 | 12 XMR | 12 XMR |
+| Day 60 | 12 XMR | 12 XMR |
+| > 60 | 12 XMR | 12 XMR |
 
 ## How to get an account signed
 
@@ -83,7 +79,6 @@ Payment accounts that require signing cannot buy more than 3 XMR until 30 days *
 To sign your account you have to buy XMR following these requirements:
 
 - trade amount is greater than or equal to 0.1 XMR and lesser than or equal to 3 XMR
-- offer must be in a market that requires signing (USD, EUR, CAD, GBP, AUD, BRL)
 - seller's account must have been signed for over 30 days at the time of the signing trade
 
 Through taking an offer you can make sure that the offer fulfils the requirements to sign your account. Making an offer could not sign your account, because taker could be unable to sign your account (signed since less than 30 days, or unsigned).
@@ -95,7 +90,7 @@ The Haveno interface makes it easy to determine if an offer can help you get sig
 Top offers won't get you signed. Bottom offers will get you signed.
 ///
 
-In the image above, the offer on top does not have a check mark, but the offer on the bottom does. And it's a valid size (i.e., between 0.1 XMR and 3 XMR), so taking that offer and successfully completing the trade will result in a signed account.
+In the image above, the offers on top do not have a check mark, but the offers on the bottom do. And it's a valid size (i.e. between 0.1 XMR and 3 XMR), so taking that offer and successfully completing the trade will result in a signed account.
 
 You can see your payment account's limits and signing status at <br>
 `Accounts` > `Traditional Currency Accounts` Pick an account and look toward the bottom:
@@ -105,7 +100,7 @@ You can see your payment account's limits and signing status at <br>
 
 ### 2. With your own signed account
 
-Once you have 1 signed payment account, any new payment account you create that requires signing will be self-signed as long as it uses the **exact same name** as your previously signed account. The payment account can be of a different type (e.g. a signed SEPA account can self-sign a SEPA Instant account), but a payment account created with a name that is even slightly different will not be self-signed.
+Once you have 1 signed payment account, any **new** payment account you create that requires signing will be self-signed as long as it uses the **exact same name** as your previously signed account. The payment account can be of a different type (e.g. a signed SEPA account can self-sign a SEPA Instant account), but a payment account created with a name that is even slightly different will not be self-signed.
 
 Payment account types that don't require your full name cannot be self-signed (e.g. Revolut, which only requires an email address) and they cannot self-sign other payment accounts.
 

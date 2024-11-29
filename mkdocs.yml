@@ -1,5 +1,5 @@
 site_name: Haveno Documentation
-site_url: https://docs.haveno-reto.com
+site_url: https://docs.retoswap.com
 copyright: Copyright &copy; 2024 Haveno & retoaccess1
 
 theme:
@@ -16,13 +16,11 @@ theme:
     - search.suggest
     - search.highlight
   palette:
-    # Palette toggle for light mode
-    - scheme: youtube
+    - scheme: youtube  # Palette toggle for light mode
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-    # Palette toggle for dark mode
-    - scheme: slate
+    - scheme: slate  # Palette toggle for dark mode
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
