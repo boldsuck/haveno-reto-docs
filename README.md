@@ -2,4 +2,4 @@
 
 # Haveno Documentation
 
-This repository hosts the documentation related to Haveno-reto. It's online at [https://docs.retoswap.com](https://docs.retoswap.com).
+This repository hosts the documentation related to RetoSwap. It's online at [https://docs.retoswap.com](https://docs.retoswap.com).

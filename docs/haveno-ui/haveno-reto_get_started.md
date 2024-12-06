@@ -1,4 +1,4 @@
-# Get started on Haveno-reto
+# Get started on RetoSwap
 
 ### 1. Launching Haveno
 
