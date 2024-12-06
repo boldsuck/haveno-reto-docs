@@ -1,3 +1,8 @@
+---
+title: Haveno Documentation
+hide:
+  - navigation
+---
 # Haveno Documentation
 
 Welcome to the documentation of Haveno-reto, the Decentralized, peer-to-peer network based on Monero.
