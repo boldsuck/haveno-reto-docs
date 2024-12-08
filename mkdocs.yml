@@ -72,10 +72,10 @@ nav:
     - Overview of Haveno: 'the-project/overview.md'
     - Trade Protocol: 'the-project/trade-protocol.md'
     - Conflict Resolution: 'the-project/conflict-resolution.md'
-      - Roles:
-        - Core Team: 'the-project/roles/core-team.md'
-        - Arbitrators: 'the-project/roles/arbitrators.md'
-        - Publishers: 'the-project/roles/publishers.md'
+    - Roles:
+      - Core Team: 'the-project/roles/core-team.md'
+      - Arbitrators: 'the-project/roles/arbitrators.md'
+      - Publishers: 'the-project/roles/publishers.md'
     - Assets and Payment Methods: 'the-project/assets.md'
       - Payment Methods:
         - Overview - Currently supported: 'the-project/payment_methods/0-all-methods.md'
@@ -108,7 +108,7 @@ nav:
         - UPI: 'the-project/payment_methods/UPI.md'
         - US Postal Money Order: 'the-project/payment_methods/US_Postal_Money_Order.md'
         - Verse: 'the-project/payment_methods/Verse.md'
-      - Account limits: 'the-project/account_limits.md'
+    - Account limits: 'the-project/account_limits.md'
   - Development:
     - Install and Run Haveno: 'development/installing.md'
     - User Interface: 'development/haveno-ui.md'
