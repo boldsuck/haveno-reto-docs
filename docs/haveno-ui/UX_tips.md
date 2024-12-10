@@ -1,4 +1,4 @@
-# Optimize your Haveno-reto usage and/or make it more comfortable
+# Optimize your RetoSwap usage and/or make it more comfortable
 
 ### Settings
 
