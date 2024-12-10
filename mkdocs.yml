@@ -67,8 +67,9 @@ extra:
       link: irc://irc.libera.chat/#haveno
 
 nav:
-  - Home: 'index.md'
-  - The Project:
+- Home: 'index.md'
+- The Project:
+  - The Basics:
     - Overview of Haveno: 'the-project/overview.md'
     - Trade Protocol: 'the-project/trade-protocol.md'
     - Conflict Resolution: 'the-project/conflict-resolution.md'
@@ -76,7 +77,8 @@ nav:
       - Core Team: 'the-project/roles/core-team.md'
       - Arbitrators: 'the-project/roles/arbitrators.md'
       - Publishers: 'the-project/roles/publishers.md'
-    - Assets and Payment Methods: 'the-project/assets.md'
+  - Assets and Payment Methods:
+    - Assets: 'the-project/assets.md'
     - Payment Methods:
       - Overview - Currently supported: 'the-project/payment_methods/0-all-methods.md'
       - ACH: 'the-project/payment_methods/ACH.md'
@@ -109,18 +111,18 @@ nav:
       - US Postal Money Order: 'the-project/payment_methods/US_Postal_Money_Order.md'
       - Verse: 'the-project/payment_methods/Verse.md'
     - Account limits: 'the-project/account_limits.md'
-  - Development:
-    - Install and Run Haveno: 'development/installing.md'
-    - User Interface: 'development/haveno-ui.md'
-    - API: 'development/api.md'
-    - Bounties: 'development/bounties.md'
-    - Import Development Environment: 'development/importing.md'
-    - Contributor Guidelines: 'development/contributor-guidelines.md'
-  - Haveno UI:
-    - Getting Started: 'haveno-ui/get_started.md'
-    - Getting Started 2: 'haveno-ui/haveno-reto_get_started.md'
-    - UX tips: 'haveno-ui/UX_tips.md'
-    - Trading recommendation: 'haveno-ui/trading-recommendations.md'
-    - Security tips: 'haveno-ui/security.md'
-    - Troubleshooting: 'haveno-ui/troubleshooting.md'
-    - Backup & Restore: 'haveno-ui/backup_and_restore.md'
+- Development:
+  - Install and Run Haveno: 'development/installing.md'
+  - User Interface: 'development/haveno-ui.md'
+  - API: 'development/api.md'
+  - Bounties: 'development/bounties.md'
+  - Import Development Environment: 'development/importing.md'
+  - Contributor Guidelines: 'development/contributor-guidelines.md'
+- Haveno UI:
+  - Getting Started: 'haveno-ui/get_started.md'
+  - Getting Started 2: 'haveno-ui/haveno-reto_get_started.md'
+  - UX tips: 'haveno-ui/UX_tips.md'
+  - Trading recommendation: 'haveno-ui/trading-recommendations.md'
+  - Security tips: 'haveno-ui/security.md'
+  - Troubleshooting: 'haveno-ui/troubleshooting.md'
+  - Backup & Restore: 'haveno-ui/backup_and_restore.md'
