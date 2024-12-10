@@ -76,7 +76,7 @@ nav:
       - Core Team: 'the-project/roles/core-team.md'
       - Arbitrators: 'the-project/roles/arbitrators.md'
       - Publishers: 'the-project/roles/publishers.md'
-    - Assets and Payment Methods: 'the-project/assets.md'
+      - Assets and Payment Methods: 'the-project/assets.md'
       - Payment Methods:
         - Overview - Currently supported: 'the-project/payment_methods/0-all-methods.md'
         - ACH: 'the-project/payment_methods/ACH.md'
