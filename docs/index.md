@@ -3,7 +3,7 @@
 Welcome to the documentation of Haveno-reto, the Decentralized, peer-to-peer network based on Monero.
 
 Take a look at the menu on the left and start exploring. Make sure you also take a look at the [Haveno FAQ](https://haveno.exchange/faq/) on the developer website.
-You can find further illustrated tutorials at the [Posts by nihilist](https://retoswap.com/#posts)
+You can find further illustrated tutorials at the [The Nihilism Blog](https://blog.nowhere.moe/opsec/index.html) Chapter; Clientside - Decentralized Finances
 
 [:material-web: Haveno-reto Website](https://retoswap.com/){ .md-button .md-button--primary }
 [:material-github: Github Project](https://github.com/retoaccess1/){ .md-button .md-button--primary }

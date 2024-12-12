@@ -9,24 +9,36 @@ theme:
   favicon: 'resources/img/favicon.ico'
   features:
     - navigation.instant
-    - navigation.tracking
     - navigation.sections
-    - toc.follow
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
-    - search.suggest
+    - navigation.tracking
     - search.highlight
+    - search.suggest
+    - toc.follow
   palette:
-    - scheme: youtube  # Palette toggle for light mode
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: youtube
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-    - scheme: slate  # Palette toggle for dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
 
 plugins:
     - macros
+    - privacy
     - search
 
 markdown_extensions:
@@ -51,22 +63,28 @@ extra_css:
 
 extra:
   version:
-    haveno: 1.0.12
+    haveno: 1.0.14
   social:
     - icon: material/web
       link: https://haveno.exchange
+      name: Website
     - icon: fontawesome/brands/github
       link: https://github.com/haveno-dex
+      name: GitHub
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/HavenoDEX
+      name: Twitter
     - icon: simple/matrix
       link: https://matrix.to/#/#haveno:monero.social
-    - icon: material/chat
+      name: Matrix
+    - icon: simple/liberadotchat
       link: irc://irc.libera.chat/#haveno
+      name: IRC/Libera
 
 nav:
-  - Home: 'index.md'
-  - The Project:
+- Home: 'index.md'
+- The Project:
+  - The Basics:
     - Overview of Haveno: 'the-project/overview.md'
     - Trade Protocol: 'the-project/trade-protocol.md'
     - Conflict Resolution: 'the-project/conflict-resolution.md'
@@ -74,7 +92,8 @@ nav:
       - Core Team: 'the-project/roles/core-team.md'
       - Arbitrators: 'the-project/roles/arbitrators.md'
       - Publishers: 'the-project/roles/publishers.md'
-    - Assets and Payment Methods: 'the-project/assets.md'
+  - Assets and Payment Methods:
+    - Assets: 'the-project/assets.md'
     - Payment Methods:
       - Overview - Currently supported: 'the-project/payment_methods/0-all-methods.md'
       - ACH: 'the-project/payment_methods/ACH.md'
@@ -107,18 +126,18 @@ nav:
       - US Postal Money Order: 'the-project/payment_methods/US_Postal_Money_Order.md'
       - Verse: 'the-project/payment_methods/Verse.md'
     - Account limits: 'the-project/account_limits.md'
-  - Development:
-    - Install and Run Haveno: 'development/installing.md'
-    - User Interface: 'development/haveno-ui.md'
-    - API: 'development/api.md'
-    - Bounties: 'development/bounties.md'
-    - Import Development Environment: 'development/importing.md'
-    - Contributor Guidelines: 'development/contributor-guidelines.md'
-  - Haveno UI:
-    - Getting Started: 'haveno-ui/get_started.md'
-    - Getting Started 2: 'haveno-ui/haveno-reto_get_started.md'
-    - UX tips: 'haveno-ui/UX_tips.md'
-    - Trading recommendation: 'haveno-ui/trading-recommendations.md'
-    - Security tips: 'haveno-ui/security.md'
-    - Troubleshooting: 'haveno-ui/troubleshooting.md'
-    - Backup & Restore: 'haveno-ui/backup_and_restore.md'
+- Development:
+  - Install and Run Haveno: 'development/installing.md'
+  - User Interface: 'development/haveno-ui.md'
+  - API: 'development/api.md'
+  - Bounties: 'development/bounties.md'
+  - Import Development Environment: 'development/importing.md'
+  - Contributor Guidelines: 'development/contributor-guidelines.md'
+- Haveno UI:
+  - Quick Start Guide: 'haveno-ui/quick_start.md'
+  - Getting Started: 'haveno-ui/get_started.md'
+  - UX tips: 'haveno-ui/UX_tips.md'
+  - Trading recommendation: 'haveno-ui/trading-recommendations.md'
+  - Security tips: 'haveno-ui/security.md'
+  - Troubleshooting: 'haveno-ui/troubleshooting.md'
+  - Backup & Restore: 'haveno-ui/backup_and_restore.md'

@@ -1,35 +1,99 @@
-# Getting Started
+# Get started on RetoSwap
 
-- This guide covers just what you need to get trading quickly!
+### 1. Launching Haveno
 
-**Before you can start trading on Haveno-reto, you'll need a little Moneroj for a security deposit and fees (0.2 XMR should be enough). Each trader must lock Moneroj in a multisignature escrow until the trade is complete—this is part of what makes trading on Haveno-reto highly secure.**
+![Image](../resources/img/haveno-ui/startup.png)
+/// caption
+Nothing to do expect launching the app and waiting for all services initalized
+///
 
-### 1. [Download and Install Haveno-reto](https://haveno-reto.com/#downloads)
 
 ### 1.1 Verify the package
+
 - It's also a good idea to verify your installer file with our [PGP key](https://haveno-reto.com/reto_public.asc)
 
 ### 1.2 Installation
+
 - .dmg packages aren't verified by apple, so you'll have to do ```$ xattr -d com.apple.quarantine /Applications/Haveno.app``` for allowing installations from builds untrusted by apple.
 -  For installing a .deb: ```$ sudo apt install /path/to/haveno.deb ```
 -  For flatpak: ```$ sudo flatpak install /path/to/Haveno.flatpak ```
 -  For .appimages, make sure you marked haveno.appimage as an executable ```$ chmod +x /path/to/haveno.appimage```
 
 If you'd like to build Haveno-reto from source, [here are directions](https://github.com/retoaccess1/haveno-reto/blob/master/docs/installing.md). Haveno is free/libre open-source software that you can contribute to [(github)](https://github.com/retoaccess1/haveno-reto).
+=======
 
-### 2. Back Up Keys, Write Down Seed
+![Image](../resources/img/haveno-ui/home.png)
+/// caption
+Once all services are ready, the market will be shown.
+///
 
-- With Haveno-reto, you're in total control of your funds and your data. This means you retain unparalleled sovereignty, but it also means no one can help you if you lose something important—so it's critical that you do proper backups before using Haveno-reto to trade.
+### 2. Backup your seed and setup a trading account
 
-More details at: [data backup and restoration](backup_and_restore.md).
+Go in `Account` and click on `Seed` tab to backup your main wallet.
+![Image](../resources/img/haveno-ui/save_seed.png)
 
-### 3. Create a Payment Account
+You also can set a wallet password for additionnal security
+![Image](../resources/img/haveno-ui/password_wallet.png)
 
-- In order to trade monero on Haveno-reto, you've got to set up some way to send or receive other funds. Haveno-reto only handles the monero side of a trade—the other side is handled through fiat payment services (banks, money orders, cash) or altcoin wallets.
+Trading needs an account for the payment method and currency used to take and publish offers, it also ensure data integrity and protects against evil actors trying to use stolen accounts.
+![Image](../resources/img/haveno-ui/create_trading_account.png)
 
-Not sure which kind of payment account to set up? There's a full list of [payment methods](../the-project/payment_methods/0-all-methods.md) on the wiki.
+### 3. Trading
 
-### 4. Do a Trade
+### 3.1 Create, fund and publish your offer (maker)
 
-Making an offer will usually get you a better price and more control (e.g.: setting payment method and deposit percentage), but taking an offer can be more convenient.
-To see both sides of a Haveno-reto trade at the same time, side-by-side: be sure to check out our [trading recommendations](trading-recommendations.md) and [linked tutorials made by the community](https://haveno-reto.com/#posts).
+Go in the market you want to trade (in our example selling Monero for Bitcoin) and click on `CREATE OFFER TO SELL XMR`
+![Image](../resources/img/haveno-ui/create_offer.png)
+
+You can set an optional minimum of XMR to buy, if you want flexible sizes to be accessible and setting a fixed price or a % derivation (below or above the market price) before clicking on `NEXT STEP`.
+![Image](../resources/img/haveno-ui/price_fluctuation_or_fixed_price.png)
+
+After the offer is set, you need to fund your trade offer with a security deposit worth 15% of the trade (as shown earlier) before placing your offer.
+In our case since we sell we technically need 115% of the trade.
+![Image](../resources/img/haveno-ui/place_offer.png)
+
+It is generally advised to externally fund your trade so you'll need to wait for block confirmations, balance is shown as **pending** until the external deposit reached 10 block confirmations and you will have the possibility to click on `REVIEW: PLACE OFFER TO BUY BTC` when funds will be shown in **available balance**.
+![Image](../resources/img/haveno-ui/wait_for_confirm_funding.png)
+
+Confirm placing your offer, you can take your TradeID to share it privately to someone or reviewing the summary before confirming.
+![Image](../resources/img/haveno-ui/confirm:placeoffer.png)
+
+Now the offer is published, you can disable it if you wont be available or for activating it to people you know only.
+![Image](../resources/img/haveno-ui/deactivate_offer.png)
+
+### 3.2 Find and take an offer (taker)
+
+As a taker, go in the market you want and take an offer.
+![Image](../resources/img/haveno-ui/searchoffer.png)
+
+Or filter TradeIDs / peer hidden-service to take specific offers.
+![Image](../resources/img/haveno-ui/filteroffer.png)
+
+Set a custom amount if the maker allows or if you need it, click on next step.
+![Image](../resources/img/haveno-ui/takeoffer.png)
+
+Fund your trade with a 15% security deposit and click on next step.
+![Image](../resources/img/haveno-ui/fundtookoffer.png)
+
+Confirm taking the offer and it will initiate the trade.
+![Image](../resources/img/haveno-ui/takeofferprocess.png)
+
+### 3.3 Trading steps
+
+Once the trade is setup, go in `MY OPEN OFFERS` and click on your trade. To get the trading chat for contacting your peer, click on the chat icon.
+![Image](../resources/img/haveno-ui/opened_trade.png)
+/// caption
+Peers need to wait 10 confirmations before trading (chain re-org protection)
+///
+
+In our example the taker buy XMR so marking `PAYMENT SENT` once BTC funds are sent to the maker.
+![Image](../resources/img/haveno-ui/tradetakermarkpaymentsent.png)
+
+The seller (maker in our case) receive the payment notification.
+![Image](../resources/img/haveno-ui/makerreceivesnotificationpaymentsent.png)
+
+The maker clicks on confirm receiving the payment after having verified it.
+![Image](../resources/img/haveno-ui/makermarkconfirmation.png)
+
+After the payment has been confirmed as received, both peers can close the trade and funds will be paid-out to their main wallets.
+![Image](../resources/img/haveno-ui/makerclosetrade.png)
