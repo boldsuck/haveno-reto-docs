@@ -7,6 +7,7 @@
 ### 1. [Download and Install Haveno-reto](https://haveno-reto.com/#downloads)
 
 - It's also a good idea to verify your installer file with our [PGP key](https://haveno-reto.com/reto_public.asc)
+- .dmg packages aren't verified by apple, so you'll have to do ```$ xattr -d com.apple.quarantine /Applications/Haveno.app``` for allowing installations from builds untrusted by apple.
 
 If you'd like to build Haveno-reto from source, [here are directions](https://github.com/retoaccess1/haveno-reto/blob/master/docs/installing.md). Haveno is free/libre open-source software that you can contribute to [(github)](https://github.com/retoaccess1/haveno-reto).
 
