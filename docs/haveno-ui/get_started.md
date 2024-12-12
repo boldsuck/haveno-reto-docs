@@ -12,7 +12,7 @@
 ### 1.2 Installation
 - .dmg packages aren't verified by apple, so you'll have to do ```$ xattr -d com.apple.quarantine /Applications/Haveno.app``` for allowing installations from builds untrusted by apple.
 -  For installing a .deb: ```$ sudo apt install /path/to/haveno.deb ```
--  For flatpack: ```$ sudo flatpak install /path/to/Haveno.flatpak ```
+-  For flatpak: ```$ sudo flatpak install /path/to/Haveno.flatpak ```
 -  For .appimages, make sure you marked haveno.appimage as an executable ```$ chmod +x /path/to/haveno.appimage```
 
 If you'd like to build Haveno-reto from source, [here are directions](https://github.com/retoaccess1/haveno-reto/blob/master/docs/installing.md). Haveno is free/libre open-source software that you can contribute to [(github)](https://github.com/retoaccess1/haveno-reto).
