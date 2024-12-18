@@ -19,4 +19,4 @@ jobs:
              mkdocs-material \
              mkdocs-macros-plugin
 
-      - run: mkdocs gh-deploy --remote-name pages --force
+      - run: mkdocs gh-deploy --remote-branch pages --force
