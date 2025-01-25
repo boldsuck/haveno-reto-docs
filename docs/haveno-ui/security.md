@@ -34,7 +34,7 @@ socks5ProxyXmrAddress=127.0.0.1:9050
 
 Now you can start Tor in first and then Cryptocurrency, the client will securely control Tor for all it's needs.
 
-- To use RetoSwap on TailsOS
+### Install and use RetoSwap on TailsOS
 ```
 $ curl -fsSLO https://github.com/retoaccess1/haveno-reto/raw/master/scripts/install_tails/haveno-install.sh && bash haveno-install.sh https://github.com/retoaccess1/haveno-reto/releases/download/v(last-version)/haveno-linux-deb.zip <DAA24D878B8D36C90120A897CA02DAC12DAE2D0F>
 ```
