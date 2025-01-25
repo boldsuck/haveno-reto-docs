@@ -12,11 +12,11 @@ Edit your *haveno.properties* file located at `{haveno-reto-path}/haveno.propert
 Be sure to use in your tor configuration file:
 
 ```
-PidFile {Cryptocurrency-path}/xmr_mainnet/tor/pid # Only on Linux
-DataDirectory {Cryptocurrency-path}/xmr_mainnet/tor/
-GeoIPFile {Cryptocurrency-path}/xmr_mainnet/tor/geoip
-GeoIPv6File {Cryptocurrency-path}/xmr_mainnet/tor/geoip6
-CookieAuthFile {Cryptocurrency-path}/xmr_mainnet/tor/.tor/control_auth_cookie
+PidFile {haveno-reto-path}/xmr_mainnet/tor/pid # Only on Linux
+DataDirectory {haveno-reto-path}/xmr_mainnet/tor/
+GeoIPFile {haveno-reto-path}/xmr_mainnet/tor/geoip
+GeoIPv6File {haveno-reto-path}/xmr_mainnet/tor/geoip6
+CookieAuthFile {haveno-reto-path}/xmr_mainnet/tor/.tor/control_auth_cookie
 RunAsDaemon 1
 AvoidDiskWrites 1
 CookieAuthentication 1
