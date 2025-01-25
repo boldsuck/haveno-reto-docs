@@ -40,7 +40,7 @@ Now you can start Tor in first and then RetoSwap, the client will securely contr
 ```
 $ curl -fsSLO https://github.com/retoaccess1/haveno-reto/raw/master/scripts/install_tails/haveno-install.sh && bash haveno-install.sh https://github.com/retoaccess1/haveno-reto/releases/download/v(last-version)/haveno-linux-deb.zip <DAA24D878B8D36C90120A897CA02DAC12DAE2D0F>
 ```
-To update your TailsOS Retoswap client, just run again this command and be sure you put the (last version)[https://github.com/retoaccess1/haveno-reto/releases/latest] link.
+To update your TailsOS Retoswap client, just run again this command and be sure you put the [last version](https://github.com/retoaccess1/haveno-reto/releases/latest) link.
 
 ## Monero node
 
