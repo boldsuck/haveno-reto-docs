@@ -48,7 +48,7 @@ To update your TailsOS Retoswap client, just run again this command and be sure 
 
 Add in your *haveno.properties* file:
 ```
-xmrNode=http://{IPv4/6, DNS, Tor hidden-service}:{PORT}
+xmrNode=http://{IPv4/6, DNS, Tor hidden-service}:18081
 ```
 If your node haves RPC authentication, add:
 ```
@@ -63,3 +63,34 @@ If the monero node is a Tor hidden-service:
 ```
 useTorForXmr=ON
 ```
+
+#### Run a monero node using Tor
+
+##### Tor config
+Edit your existing Tor config and add:
+```
+SocksPort 9052 OnionTrafficOnly IsolateDestAddr
+HiddenServiceDir {/path/to/hidden-service}
+HiddenServicePort 18083 127.0.0.1:18083
+HiddenServicePort 18081 127.0.0.1:18081
+HiddenServiceEnableIntroDoSDefense 1
+HiddenServiceEnableIntroDoSRatePerSec 10
+HiddenServiceEnableIntroDoSBurstPerSec 20
+HiddenServicePoWDefensesEnabled 1
+HiddenServicePoWQueueRate 5
+HiddenServicePoWQueueBurst 10
+HiddenServiceMaxStreams 1000
+HiddenServiceMaxStreamsCloseCircuit 1
+```
+Start and stop Tor, now your hidden-service will be available at /path/to/hidden-service/hostname (it's a text-file)
+
+##### Monero node config
+Get the [last monero-cli version](https://www.getmonero.org/downloads/) and in bitmonero.conf add:
+```
+rpc-bind-ip=127.0.0.1
+rpc-bind-port=18081
+rpc-login=username:password
+anonymous-inbound="yourhiddenservice.onion":18083,127.0.0.1:18083,25
+tx-proxy=tor,127.0.0.1:9052,10
+```
+Now your monero node will be accessible from the Tor network for your wallet at: yourhiddenservice.onion:18081
