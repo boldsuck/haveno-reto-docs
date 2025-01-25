@@ -18,6 +18,7 @@ Nothing to do expect launching the app and waiting for all services initalized
 -  For installing a .deb: ```$ sudo apt install /path/to/haveno.deb```
 -  For flatpak: ```$ sudo flatpak install /path/to/Haveno.flatpak```
 -  For .appimages, make sure you marked haveno.appimage as an executable ```$ chmod +x /path/to/haveno.appimage```
+-  For TailsOS, please follow [security-section](./security.md#install-and-use-retoswap-on-tailsos) instructions
 
 If you'd like to build Haveno-reto from source, [here are directions](https://github.com/retoaccess1/haveno-reto/blob/master/docs/installing.md).<br>
 Haveno is free/libre open-source software that you can contribute to [(github)](https://github.com/retoaccess1/haveno-reto).
