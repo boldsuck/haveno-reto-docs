@@ -28,6 +28,9 @@ Haveno is free/libre open-source software that you can contribute to [(github)](
 
 More details at: [data backup and restoration](backup_and_restore.md).
 
+#### 2.1 Harden RetoSwap
+If you want more security or needing custom network settings, go to [security page](./security.md)
+
 ### 3. Create a Payment Account
 
 - In order to trade monero on RetoSwap, you've got to set up some way to send or receive other funds. RetoSwap only handles the monero side of a trade—the other side is handled through fiat payment services (banks, money orders, cash) or altcoin wallets.
