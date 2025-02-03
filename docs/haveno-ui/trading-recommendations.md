@@ -14,4 +14,4 @@
 
 ### Other ressources
 
-[Payment Methods](../the-project/payment_methods/0-all-methods.md)
+- [Payment Methods](../the-project/payment_methods/0-all-methods.md) list and recommendations
