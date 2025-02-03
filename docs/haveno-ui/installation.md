@@ -31,13 +31,7 @@ More details at: [data backup and restoration](backup_and_restore.md).
 #### 2.1 Harden RetoSwap
 If you want more security or needing custom network settings, go to [security page](./security.md)
 
-### 3. Create a Payment Account
-
-- In order to trade monero on RetoSwap, you've got to set up some way to send or receive other funds. RetoSwap only handles the monero side of a trade—the other side is handled through fiat payment services (banks, money orders, cash) or altcoin wallets.
-
-Not sure which kind of payment account to set up? There's a full list of [payment methods](../the-project/payment_methods/0-all-methods.md) on the wiki.
-
-### 4. Do a Trade
+### 3. Do a Trade
 Go on [getting started](./get_started.md) for a trading tutorial to see both sides of a RetoSwap trade at the same time, side-by-side. Be sure to check out our [trading recommendations](./trading-recommendations.md) and [linked tutorials made by the community](https://haveno-reto.com/#posts) for more informations.
 
 Making an offer will usually get you a better price and more control (e.g.: setting payment method and deposit percentage), but taking an offer can be more convenient.
