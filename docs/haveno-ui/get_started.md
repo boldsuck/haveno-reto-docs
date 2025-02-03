@@ -7,36 +7,14 @@
 Nothing to do expect launching the app and waiting for all services initalized
 ///
 
-
-### 1.1 Verify the package
-
-- It's also a good idea to verify your installer file with our [PGP key](https://haveno-reto.com/reto_public.asc)
-
-### 1.2 Installation
-
-- .dmg packages aren't verified by apple, so you'll have to do ```$ xattr -d com.apple.quarantine /Applications/Haveno.app``` for allowing installations from builds untrusted by apple.
--  For installing a .deb: ```$ sudo apt install /path/to/haveno.deb```
--  For flatpak: ```$ sudo flatpak install /path/to/Haveno.flatpak```
--  For .appimages, make sure you marked haveno.appimage as an executable ```$ chmod +x /path/to/haveno.appimage```
--  For TailsOS, please follow [security-section](./security.md#install-and-use-retoswap-on-tailsos) instructions
-
-If you'd like to build Haveno-reto from source, [here are directions](https://github.com/retoaccess1/haveno-reto/blob/master/docs/installing.md).<br>
-Haveno is free/libre open-source software that you can contribute to [(github)](https://github.com/retoaccess1/haveno-reto).
-
 ![Image](../resources/img/haveno-ui/home.png)
 /// caption
 Once all services are ready, the market will be shown.
 ///
 
-### 2. Backup your seed and setup a trading account
+### 2. Setup a trading account
 
-Go in `Account` and click on `Seed` tab to backup your main wallet.
-![Image](../resources/img/haveno-ui/save_seed.png)
-
-You also can set a wallet password for additionnal security
-![Image](../resources/img/haveno-ui/password_wallet.png)
-
-Trading needs an account for the payment method and currency used to take and publish offers, it also ensure data integrity and protects against evil actors trying to use stolen accounts.
+Trading needs an account for the payment method and currency used to take and publish offers, it ensure data integrity while using an account aging system to protect against evil actors trying to use stolen accounts for trading.
 ![Image](../resources/img/haveno-ui/create_trading_account.png)
 
 ### 3. Trading

@@ -40,7 +40,9 @@ Export fiat payment accounts here. You can export cryptocurrency accounts from t
 
 ### 3. Back up your wallet seed
 
-Please be sure to properly back up your wallet seed.
+Please be sure to properly back up your wallet seed, go in `Account` and click on `Seed` tab to backup your main wallet.
+
+![Image](../resources/img/haveno-ui/save_seed.png)
 
 ### 4. Export Tor state
 
