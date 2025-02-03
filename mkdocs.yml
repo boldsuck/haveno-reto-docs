@@ -134,7 +134,7 @@ nav:
   - Import Development Environment: 'development/importing.md'
   - Contributor Guidelines: 'development/contributor-guidelines.md'
 - Haveno UI:
-  - Quick Start Guide: 'haveno-ui/installation.md'
+  - Installation: 'haveno-ui/installation.md'
   - Getting Started: 'haveno-ui/get_started.md'
   - UX tips: 'haveno-ui/UX_tips.md'
   - Trading recommendation: 'haveno-ui/trading-recommendations.md'
