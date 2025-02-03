@@ -3,9 +3,11 @@
 ## Tor
 
 #### Force Tor routing on monero traffic from RetoSwap:
+
 Syncing your monero wallet is using clearnet by default (transactions are broadcasted over Tor). If you want to do it over Tor to keep your complete haveno/monero traffic private:
 Edit your *haveno.properties* file located at `{haveno-reto-path}/haveno.properties` and add
 **--useTorForXmr=ON** in a new line (**--useTorForXmr=AFTER_SYNC** is the default arg)
+This setting is also in the GUI in the tab `Settings` -> `NETWORK INFO`.
 
 #### Use RetoSwap with Tor running as a system process in background
 
@@ -43,6 +45,7 @@ $ curl -fsSLO https://github.com/retoaccess1/haveno-reto/raw/master/scripts/inst
 To update your TailsOS Retoswap client, just run again this command and be sure you put the [last version](https://github.com/retoaccess1/haveno-reto/releases/latest) link.
 
 ## Monero wallet
+
 You can set a wallet password for protecting access of your funds
 ![Image](../resources/img/haveno-ui/password_wallet.png)
 
@@ -71,6 +74,7 @@ useTorForXmr=ON
 #### Run a monero node using Tor
 
 ##### Tor config
+
 Edit your existing Tor config and add:
 ```
 SocksPort 9052 OnionTrafficOnly IsolateDestAddr
@@ -89,6 +93,7 @@ HiddenServiceMaxStreamsCloseCircuit 1
 Start and stop Tor, now your hidden-service will be available at /path/to/hidden-service/hostname (it's a text-file)
 
 ##### Monero node config
+
 Get the [last monero-cli version](https://www.getmonero.org/downloads/) and in bitmonero.conf add:
 ```
 rpc-bind-ip=127.0.0.1
