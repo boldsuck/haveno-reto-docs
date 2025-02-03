@@ -42,6 +42,10 @@ $ curl -fsSLO https://github.com/retoaccess1/haveno-reto/raw/master/scripts/inst
 ```
 To update your TailsOS Retoswap client, just run again this command and be sure you put the [last version](https://github.com/retoaccess1/haveno-reto/releases/latest) link.
 
+## Monero wallet
+You can set a wallet password for protecting access of your funds
+![Image](../resources/img/haveno-ui/password_wallet.png)
+
 ## Monero node
 
 #### Use a custom node on RetoSwap
