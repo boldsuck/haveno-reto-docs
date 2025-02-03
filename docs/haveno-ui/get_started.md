@@ -12,15 +12,9 @@ Nothing to do expect launching the app and waiting for all services initalized
 Once all services are ready, the market will be shown.
 ///
 
-### 2. Backup your seed and setup a trading account
+### 2. Setup a trading account
 
-Go in `Account` and click on `Seed` tab to backup your main wallet.
-![Image](../resources/img/haveno-ui/save_seed.png)
-
-You also can set a wallet password for additionnal security
-![Image](../resources/img/haveno-ui/password_wallet.png)
-
-Trading needs an account for the payment method and currency used to take and publish offers, it also ensure data integrity and protects against evil actors trying to use stolen accounts.
+Trading needs an account for the payment method and currency used to take and publish offers, it ensure data integrity while using an account aging system to protect against evil actors trying to use stolen accounts for trading.
 ![Image](../resources/img/haveno-ui/create_trading_account.png)
 
 ### 3. Trading
