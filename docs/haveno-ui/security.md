@@ -5,7 +5,7 @@
 #### Force Tor routing on monero traffic from RetoSwap:
 
 Syncing your monero wallet is using clearnet by default (transactions are broadcasted over Tor). If you want to do it over Tor to keep your complete haveno/monero traffic private:
-Edit your *haveno.properties* file located at `{haveno-reto-path}/haveno.properties` and add
+Edit your *haveno.properties* file located at `{haveno-reto-path}/haveno.properties` and add<br>
 **--useTorForXmr=ON** in a new line (**--useTorForXmr=AFTER_SYNC** is the default arg)
 This setting is also in the GUI in the tab `Settings` -> `NETWORK INFO`.
 
@@ -39,9 +39,11 @@ socks5ProxyXmrAddress=127.0.0.1:9050
 Now you can start Tor in first and then RetoSwap, the client will securely control Tor for all it's needs.
 
 ### Install and use RetoSwap on TailsOS
+
 ```
 $ curl -fsSLO https://github.com/retoaccess1/haveno-reto/raw/master/scripts/install_tails/haveno-install.sh && bash haveno-install.sh https://github.com/retoaccess1/haveno-reto/releases/download/v(last-version)/haveno-linux-deb.zip <DAA24D878B8D36C90120A897CA02DAC12DAE2D0F>
 ```
+
 To update your TailsOS Retoswap client, just run again this command and be sure you put the [last version](https://github.com/retoaccess1/haveno-reto/releases/latest) link.
 
 ## Monero wallet

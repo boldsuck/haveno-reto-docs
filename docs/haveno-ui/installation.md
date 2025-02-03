@@ -10,17 +10,26 @@
 
 Verify your installer file with our [PGP key](https://retoswap.com/reto_public.asc), signatures are available on the [releases page](https://github.com/retoaccess1/haveno-reto/releases)
 
+!!! info
+    After import and trust RetoSwap's GPG key, example for Debian installer:<br>
+    `gpg --verify haveno-linux-deb.zip.sig && sha512sum haveno-linux-deb.zip`
+
 If you'd like to build RetoSwap from source, [here are directions](https://github.com/retoaccess1/haveno-reto/blob/master/docs/installing.md). Haveno is free/libre open-source software that you can contribute to [(github)](https://github.com/retoaccess1/haveno-reto).
 
 ### 1.2 Installation
 
 - .dmg packages aren't verified by apple, so you'll have to do ```$ xattr -d com.apple.quarantine /Applications/Haveno.app``` for allowing installations from builds untrusted by apple.
--  For installing a .deb: ```$ sudo apt install /path/to/haveno.deb```
+-  For installing a .deb: ```$ sudo dpkg -i /path/to/haveno.deb```
 -  For flatpak: ```$ sudo flatpak install /path/to/Haveno.flatpak```
 -  For .appimages, make sure you marked haveno.appimage as an executable ```$ chmod +x /path/to/haveno.appimage```
--  For TailsOS, please follow [security-section](./security.md#install-and-use-retoswap-on-tailsos) instructions
+-  For TailsOS, please follow [security-section](./security.md#install-and-use-retoswap-on-tailsos) instructions.
 
-If you'd like to build Haveno-reto from source, [here are directions](https://github.com/retoaccess1/haveno-reto/blob/master/docs/installing.md).<br>
+If you'd like to build Haveno-reto from source, [here are directions](https://github.com/retoaccess1/haveno-reto/blob/master/docs/installing.md).
+
+!!! info
+    You can verify your self-built binary with provides hashes. Signature of hashes.txt can be checked with the following command:<br>
+    `gpg --verify v*-hashes.txt.sig && sha512sum v*-hashes.txt`
+
 Haveno is free/libre open-source software that you can contribute to [(github)](https://github.com/retoaccess1/haveno-reto).
 
 ### 2. Back Up Keys, Write Down Seed
