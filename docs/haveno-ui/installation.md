@@ -7,6 +7,7 @@
 ### 1. [Download and Install RetoSwap](https://retoswap.com/#downloads)
 
 ### 1.1 Software verification
+
 Verify your installer file with our [PGP key](https://retoswap.com/reto_public.asc), signatures are available on the [releases page](https://github.com/retoaccess1/haveno-reto/releases)
 
 If you'd like to build RetoSwap from source, [here are directions](https://github.com/retoaccess1/haveno-reto/blob/master/docs/installing.md). Haveno is free/libre open-source software that you can contribute to [(github)](https://github.com/retoaccess1/haveno-reto).
@@ -29,11 +30,11 @@ Haveno is free/libre open-source software that you can contribute to [(github)](
 More details at: [data backup and restoration](backup_and_restore.md).
 
 #### 2.1 Harden RetoSwap
+
 If you want more security or needing custom network settings, go to [security page](./security.md)
 
 ### 3. Do a Trade
+
 Go on [getting started](./get_started.md) for a trading tutorial to see both sides of a RetoSwap trade at the same time, side-by-side. Be sure to check out our [trading recommendations](./trading-recommendations.md) and [linked tutorials made by the community](https://haveno-reto.com/#posts) for more informations.
 
 Making an offer will usually get you a better price and more control (e.g.: setting payment method and deposit percentage), but taking an offer can be more convenient.
-
-
