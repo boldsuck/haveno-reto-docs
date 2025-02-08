@@ -146,8 +146,9 @@ nav:
 - Haveno UI:
   - Installation: 'haveno-ui/installation.md'
   - Getting Started: 'haveno-ui/get_started.md'
+  - No-deposit trading: 'haveno-ui/no_deposit.md'
+  - Trading recommendations: 'haveno-ui/trading-recommendations.md'
   - UX tips: 'haveno-ui/UX_tips.md'
-  - Trading recommendation: 'haveno-ui/trading-recommendations.md'
   - Security tips: 'haveno-ui/security.md'
   - Troubleshooting: 'haveno-ui/troubleshooting.md'
   - Backup & Restore: 'haveno-ui/backup_and_restore.md'
