@@ -23,9 +23,9 @@ A practical example of a conflict resolved by an arbitrator on Haveno:
     The deposit is taken away as punishment only in the case of a malicious trader. Technical or other problems will be simply resolved by sending each trader's deposit (minus the platform fee) back to them.
 
 
-## Arbitration & Disputes on Haveno-reto
+## Arbitration & Disputes on RetoSwap
 
-Haveno-reto is guarded by two arbitrators who can take decisions during a trade-dispute. Their role is to decide who's at fault, from information given by peers in the dispute chat.
+RetoSwap is guarded by two arbitrators who can take decisions during a trade-dispute. Their role is to decide who's at fault, from information given by peers in the dispute chat.
 Trades are secured by a 2/3 multisig, so an arbitrator can't publish a payout if it wasn't signed by the taker or the maker.
 
 - Arbitrators can take up to 10 days to reply for cryptocurrency trades and 20 days for FIAT trades.
