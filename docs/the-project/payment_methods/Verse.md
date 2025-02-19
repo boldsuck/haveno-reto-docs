@@ -61,7 +61,7 @@ No, Verse accounts do not require signing.
 It is easy to add your Verse account to Haveno.
 
 - Go to the top menu in Haveno and select Account.
-- Then select National Currency Accounts.
+- Then select Traditional Currency Accounts.
 - Click add new account
 - Select Verse
 - Complete the details
@@ -88,7 +88,7 @@ You can buy XMR with Verse on Haveno in 2 waysː
 - Make an offer to buy XMR on the EUR, SEK, HUF, DKK, or PLN market.
 - Take an offer to buy XMR on the EUR, SEK, HUF, DKK, or PLN market.
 
-When the offer is confirmed Haveno will provide you with the XMR Sellers Verse details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide you with the XMR Sellers Verse details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Sent`.
 
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
@@ -106,7 +106,7 @@ You can sell XMR with Verse on Haveno in 2 waysː
 - Make an offer to sell XMR on the EUR, SEK, HUF, DKK, or PLN market.
 - Take an offer to sell XMR on the EUR, SEK, HUF, DKK, or PLN market.
 
-When the offer is confirmed Haveno will provide with the XMR Buyer with your Verse details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide with the XMR Buyer with your Verse details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Sent`.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 
@@ -129,4 +129,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see [Conflict Resolution](../conflict-resolution.md).
+For more information see [Dispute Resolution](../dispute-resolution.md).
