@@ -128,7 +128,7 @@ Downloading & verifying keys is a one-time thing. Binaries are verified after ea
 4. Install the .deb: open the newly extracted folder<br>
 `/home/user/.tb/tor-browser/Browser/Downloads/haveno-linux-deb/` and in a terminal window, type sudo dpkg -i (with a trailing space) and then drag the .deb installer from the folder into the terminal to complete the filepath (eg: for Haveno-reto v1.0.18, it should be:<br>
 `sudo dpkg -i '/home/user/.tb/tor-browser/Browser/Downloads/haveno-linux-deb/haveno-v1.0.18-linux-x86_64-installer.deb`<br>
-Press enter, Haveno-reto should be installed to /opt/haveno/. If it fails because of missing dependencies, run the command `sudo apt install -f` to download and install the missing dependencies and then try the original `sudo dpkg -i '[...].deb'` command again.
+Press ++enter++, Haveno-reto should be installed to /opt/haveno/. If it fails because of missing dependencies, run the command `sudo apt install -f` to download and install the missing dependencies and then try the original `sudo dpkg -i '[...].deb'` command again.
 
 ??? info "Alternative install in a terminal window"
     Hint: I prefer to have everything in the User Downloads folder<br>
