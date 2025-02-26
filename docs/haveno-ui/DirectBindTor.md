@@ -14,6 +14,8 @@ Ubuntu and other Debian based as well as almost any OS with systemd
 HiddenServiceDir /var/lib/tor/haveno_service/
 HiddenServicePort 9999 127.0.0.1:9999
 HiddenServicePort 9999 [::1]:9999
+# Rate limiting at the Introduction Points (protects the entire Tor network)
+HiddenServiceEnableIntroDoSDefense 1
 ```
 
 ??? info "HiddenService options"
@@ -74,6 +76,8 @@ File paths are of non-Qubes Whonix running in VirtualBox or KVM - Whonix with Xf
 # Haveno incoming anonymity connections
 HiddenServiceDir /var/lib/tor/haveno_service/
 HiddenServicePort 9999 10.152.152.11:9999
+# Rate limiting at the Introduction Points (protects the entire Tor network)
+HiddenServiceEnableIntroDoSDefense 1
 ```
 and save the file.
 
@@ -120,8 +124,11 @@ Download RetoSwap Public Key `wget https://retoswap.com/reto_public.asc`<br>
 List Fingerprint: `gpg --show-keys --with-fingerprint reto_public.asc`<br>
 **TODO:** RetoSwap arbs should post Fpr on website and SimpleX-Chat welcome message!<br>
 `gpg --import reto_public.asc`<br>
-Downloading & verifying keys is a one-time thing. Binaries are verified after each download.<br>
+Downloading & verifying keys is a one-time thing. Binaries are verified after each download. Verify whether downloaded file is signed with Reto key:<br>
 `cd /home/user/.tb/tor-browser/Browser/Downloads/`<br>
+`gpg --verify haveno-linux-deb.zip.sig haveno-linux-deb.zip`
+Who wants: Check if the hash & binary file is signed with the reto key and compare with shasum in hashes.txt
+`gpg --verify v*-hashes.txt.sig v*-hashes.txt`
 `gpg --verify haveno-linux-deb.zip.sig && sha512sum haveno-linux-deb.zip`
 
 3. Extract the archive: right-click on the downloaded .zip (eg: /home/user/.tb/tor-browser/Browser/Downloads/haveno-linux-deb.zip), click “Extract Here”<br>
@@ -133,7 +140,7 @@ Press ++enter++, Haveno-reto should be installed to /opt/haveno/. If it fails be
 ??? info "Alternative install in a terminal window"
     Hint: I prefer to have everything in the User Downloads folder<br>
     `cd /home/user/.tb/tor-browser/Browser/Downloads/`<br>
-    `gpg --verify haveno-linux-deb.zip.sig && sha512sum haveno-linux-deb.zip`<br>
+    `gpg --verify haveno-linux-deb.zip.sig haveno-linux-deb.zip`<br>
     `unzip haveno-linux-deb.zip -d /home/user/Downloads/Haveno`<br>
     `sudo dpkg -i /home/user/Downloads/Haveno/haveno-v*-linux-x86_64-installer.deb`<br>
     `rm /home/user/.tb/tor-browser/Browser/Downloads/haveno-linux-deb*`
@@ -154,9 +161,14 @@ or to use in `/home/user/.local/share/Haveno-reto/haveno.properties`
 
 ## Qubes OS
 
-There is a script that uses Haveno with DirectBindTor (currently pull request)
+For Qubes there are two pull requests for install scripts that uses Haveno with DirectBindTor:
 
 [Script to create appvm to run Haveno on qubes](https://github.com/haveno-dex/haveno/pull/1583)
+
+Can do both: Haveno with DirectBindTor (static HiddenService) or create a dynamic one with the help of Netlayer/jtorctl.
+
+[install_qubes](https://github.com/haveno-dex/haveno/pull/1611)
+[install_qubes](https://github.com/PromptPunksFauxCough/haveno/tree/install_qubes/scripts/install_qubes)
 
 ## Every OS
 
