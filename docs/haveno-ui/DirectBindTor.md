@@ -53,7 +53,7 @@ HiddenServiceEnableIntroDoSDefense 1
 
 ## Whonix
 
-On Whonix systems we need to configure 2 files. In the different Whonix types, the two files to be edited are in different places. Further details please see the two Whonix WiKi links.<br>
+On Whonix systems we need to configure 2 files. In the different Whonix types, the two files to be edited are in different places. Further details please see the two Whonix Wiki links.<br>
 If you use Qubes-Whonix, read there how to get your `TARGET` IP! `qubesdb-read /qubes-ip`
 
 1. [Create a HiddenService on Whonix-Gateway](https://www.whonix.org/wiki/Onion_Services#Step_2:_Edit_Tor_Configuration)
@@ -167,8 +167,8 @@ For Qubes there are two pull requests for install scripts that uses Haveno with 
 
 Can do both: Haveno with DirectBindTor (static HiddenService) or create a dynamic one with the help of Netlayer/jtorctl.
 
-[install_qubes](https://github.com/haveno-dex/haveno/pull/1611)
-[install_qubes](https://github.com/PromptPunksFauxCough/haveno/tree/install_qubes/scripts/install_qubes)
+- [PR install_qubes](https://github.com/haveno-dex/haveno/pull/1611)
+- [Repo install_qubes](https://github.com/PromptPunksFauxCough/haveno/tree/install_qubes/scripts/install_qubes)
 
 ## Every OS
 
