@@ -68,6 +68,7 @@ markdown_extensions:
   - pymdownx.highlight: # Code blocks
       anchor_linenums: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.snippets
   - pymdownx.superfences
 
@@ -103,7 +104,7 @@ nav:
   - The Basics:
     - Overview of Haveno: 'the-project/overview.md'
     - Trade Protocol: 'the-project/trade-protocol.md'
-    - Conflict Resolution: 'the-project/conflict-resolution.md'
+    - Dispute Resolution: 'the-project/dispute-resolution.md'
     - Roles:
       - Core Team: 'the-project/roles/core-team.md'
       - Arbitrators: 'the-project/roles/arbitrators.md'
