@@ -160,3 +160,5 @@ nav:
   - Security tips: 'haveno-ui/security.md'
   - Troubleshooting: 'haveno-ui/troubleshooting.md'
   - Backup & Restore: 'haveno-ui/backup_and_restore.md'
+- Tor configuration: 
+  - DirectBindTor: 'tor-config/DirectBindTor.md'
