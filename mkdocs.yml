@@ -64,7 +64,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  # NOTE: Default value 'use_pygments: true' controls whether highlighting carried out during build time using Pygments or in the browser with a JavaScript syntax highlighter.    
+  # NOTE: Default value 'use_pygments: true' controls whether highlighting carried out during build time using Pygments or in the browser with a JavaScript syntax highlighter.
   - pymdownx.highlight: # Code blocks
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -155,11 +155,12 @@ nav:
   - Installation: 'haveno-ui/installation.md'
   - Getting Started: 'haveno-ui/get_started.md'
   - No-deposit trading: 'haveno-ui/no_deposit.md'
+  - Cloning an offer: 'haveno-ui/cloning_an_offer.md'
   - Trading recommendations: 'haveno-ui/trading-recommendations.md'
   - UX tips: 'haveno-ui/UX_tips.md'
   - Security tips: 'haveno-ui/security.md'
   - Troubleshooting: 'haveno-ui/troubleshooting.md'
   - Backup & Restore: 'haveno-ui/backup_and_restore.md'
-- Tor configuration: 
+- Tor configuration:
   - DirectBindTor: 'tor-config/DirectBindTor.md'
   - ExternalTor: 'tor-config/external-tor-usage.md'
