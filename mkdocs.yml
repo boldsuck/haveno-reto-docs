@@ -155,7 +155,7 @@ nav:
   - Installation: 'haveno-ui/installation.md'
   - Getting Started: 'haveno-ui/get_started.md'
   - No-deposit trading: 'haveno-ui/no_deposit.md'
-  - Cloning an offer: 'haveno-ui/Cloning_an_offer.md'
+  - Cloning an offer: 'haveno-ui/cloning_an_offer.md'
   - Trading recommendations: 'haveno-ui/trading-recommendations.md'
   - UX tips: 'haveno-ui/UX_tips.md'
   - Security tips: 'haveno-ui/security.md'
